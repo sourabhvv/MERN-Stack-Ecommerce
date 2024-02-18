@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "65ca80d876ee615c0ff03d91"
+  },
+  "product_name": "Apple iPhone 14 pro (Blue, 128 GB)",
+  "description": "iphone 14 pro blue apple Bionic chip 5 G network ",
+  "price": 74000,
+  "category": "smartphones",
+  "stock": 9,
+  "image": "image\\1707770072416.jpg",
+  "created_at": {
+    "$date": "2024-02-12T20:34:32.427Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cd2385cf8775079f7a6136"
+  },
+  "product_name": "boat",
+  "description": "new boat headphons with surround sound ",
+  "price": 2100,
+  "category": "headphones",
+  "stock": 7,
+  "image": "image\\1707942789430.jpg",
+  "created_at": {
+    "$date": "2024-02-14T20:33:09.444Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cd23cfcf8775079f7a613b"
+  },
+  "product_name": "Apple iPhone 13 pro (Blue, 128 GB)",
+  "description": "Apple iPhone 13 pro (Blue, 128 GB) with pro feauture",
+  "price": 67000,
+  "category": "smartphones",
+  "stock": 9,
+  "image": "image\\1707942863248.jpg",
+  "created_at": {
+    "$date": "2024-02-14T20:34:23.251Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cdecfee3454489cb13f287"
+  },
+  "product_name": "Sony PS5 Console",
+  "description": "Sony PS5 Console - Call of Duty Modern Warfare III Bundle",
+  "price": 52390,
+  "category": "Console",
+  "stock": 5,
+  "image": "image\\1707994366006.jpg",
+  "created_at": {
+    "$date": "2024-02-15T10:52:46.011Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cdedfee3454489cb13f28c"
+  },
+  "product_name": "Xbox Core Wireless Controller – Carbon Black ",
+  "description": "Experience the modernized design of the Xbox wireless controller in robot white, featuring sculpted surfaces and refined Geometry for enhanced comfort and effortless control during gameplay\r\nStay on target with textured grip on the triggers, bumpers, and back case and with a new hybrid D-pad for accurate, yet familiar input\r\nMake the controller your own by customizing button Mapping with the Xbox accessories app\r\n",
+  "price": 4850,
+  "category": "Console",
+  "stock": 3,
+  "image": "image\\1707994622968.jpg",
+  "created_at": {
+    "$date": "2024-02-15T10:57:02.970Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cdf028e3454489cb13f290"
+  },
+  "product_name": "Zebronics 24 inch (60.4 cm) LED Monitor",
+  "description": "Zebronics 24 inch (60.4 cm) LED Monitor with Full HD Display, HDMI and VGA Port, built in Speaker, Slim Bezel, Metal Stand and Wall Mountable - Zeb-A24FHD LED",
+  "price": 6788,
+  "category": "Monitor",
+  "stock": 10,
+  "image": "image\\1707995176159.jpg",
+  "created_at": {
+    "$date": "2024-02-15T11:06:16.164Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cdf0cfe3454489cb13f29b"
+  },
+  "product_name": "Samsung 60.9Cm (24\") ",
+  "description": "Samsung 60.9Cm (24\") Business LCD Monitor With Bezel-Less Design, Amd Freesync And Game Mode Computer Monitor - Ls24R358Fzwxxl, Black",
+  "price": 9899,
+  "category": "Monitor",
+  "stock": 5,
+  "image": "image\\1707995343060.jpg",
+  "created_at": {
+    "$date": "2024-02-15T11:09:03.062Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cdf13ae3454489cb13f29f"
+  },
+  "product_name": "GIGABYTE Nvidia GeForce ® GTX 1650 ",
+  "description": "D6 pci_e_x16 WINDFORCE OC 4GD Graphics Card with Integrated 4GB GDDR6 Memory (GV-N1656WF2OC-4GD)",
+  "price": 16900,
+  "category": "GPU",
+  "stock": 5,
+  "image": "image\\1707995450908.jpg",
+  "created_at": {
+    "$date": "2024-02-15T11:10:50.909Z"
+  },
+  "__v": 0
+}]
