@@ -1,7 +1,7 @@
 import {React,useState,useEffect} from 'react'
 import Footer from './Footer'
 import { useParams } from 'react-router-dom'
-
+import { Link } from "react-router-dom";
 
 
 
@@ -35,6 +35,8 @@ function View() {
   }
   return (
     <>
+
+     <div className="flex pt-16 overflow-hidden bg-gray-50 dark:bg-gray-900">
       <div className="rounded-lg border border-gray-100 bg-white shadow-md container mx-auto p-6">
       <div className="mt-10">.</div>
 
@@ -114,6 +116,9 @@ function View() {
           <button  onClick={changeView} class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
           {viewD ? 'view 2D' : 'view 3D'}
           </button>
+          <Link to={`/chat/${id}`} class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+            Chat with seller
+          </Link>
 
         </div>
         <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200" type="button" aria-label="Like">
@@ -132,6 +137,7 @@ function View() {
   </div>
 
   
+</div>
 </div>
 
 

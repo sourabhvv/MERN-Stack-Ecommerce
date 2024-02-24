@@ -87,6 +87,9 @@ function SignUp() {
                                     >
                                         Register
                                     </button>
+                                    <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                     already an account? <Link to="/Login" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Login</Link>
+                               </p>
                                 </div>
                             </div>
                     

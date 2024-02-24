@@ -7,7 +7,8 @@ const taskRouter = require('./routes/taskRoutes');
 const productRouter = require('./routes/productRoute');
 const categoryRouter = require('./routes/categoryRoutes');
 const cartRouter = require('./routes/cartRoute');
-const user = require('./models/user')
+const chatRouter = require('./routes/chatRoute');
+const user = require('./models/user');
 
 
 const rateLimit = require('express-rate-limit');
@@ -55,6 +56,8 @@ app.use('/task', taskRouter);
 app.use('/category', categoryRouter);
 app.use('/cart',cartRouter);
 app.use('/product',productRouter);
+app.use('/chat',chatRouter);
+
 app.get('/', (req, res) => {
     res.send('Hello shubham')
 })

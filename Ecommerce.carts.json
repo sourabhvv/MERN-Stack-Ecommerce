@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "65cb4dd402826a77a45a3027"
+  },
+  "user_id": "65c7269a6893a3f7212c7cc1",
+  "products": [
+    {
+      "product_id": {
+        "$oid": "65ca80d876ee615c0ff03d91"
+      },
+      "quantity": 1,
+      "_id": {
+        "$oid": "65cfa4c860913c71d3d319b8"
+      }
+    }
+  ],
+  "total_price": 3185570,
+  "__v": 68
+}]

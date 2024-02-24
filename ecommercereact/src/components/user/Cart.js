@@ -76,7 +76,7 @@ function Cart(){
 
 
 	return(<>
-
+   <div className="flex pt-16 overflow-hidden bg-gray-50 dark:bg-gray-900">
 	<div className="rounded-lg border border-gray-100 bg-white shadow-md container mx-auto p-6 lg ">
      <ToastContainer />
              <div className="flex font-sans mt-3">
@@ -156,6 +156,7 @@ function Cart(){
                    </ul>
                    </div>
               </div>
+    </div>
     </div>
 	</>);
 }
