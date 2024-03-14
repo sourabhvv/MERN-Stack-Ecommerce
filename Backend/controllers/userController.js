@@ -54,7 +54,7 @@ const signin = async (req, res) => {
 
         }
 
-        const token = jwt.sign({ email: existingUser.email, id: existingUser._id }, SECRET_KEY,{expiresIn:'10m'});
+        const token = jwt.sign({ email: existingUser.email, id: existingUser._id }, SECRET_KEY,{expiresIn:'24h'});
         res.status(201).json({ user: existingUser, token: token })
  
     } catch (err) {

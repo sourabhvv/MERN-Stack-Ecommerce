@@ -13,11 +13,11 @@ const getMessage = async (req, res) => {
         console.error(err);
         res.status(500).json({ message: "Internal server error" });
     }
-};
+}; 
 
 const chatbyproduct = async (req, res) => {
     const product_id = req.params.product_id;
-    console.log(product_id);
+    console.log("admin");
 
     try {
         const distinctEmails = await chatmodel.aggregate([

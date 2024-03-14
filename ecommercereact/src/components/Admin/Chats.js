@@ -4,25 +4,49 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import {Link} from 'react-router-dom'
+import io from 'socket.io-client';
+const socket = io('http://localhost:5000');
+
 function Chats() {
 
-
-
+  const {id} = useParams();
   const [users , setUsers] = useState([]);
   const [messages, setMessages] = useState([]);
   const [newMessage,setnewMessage] = useState("");
-
+  const token = localStorage.getItem('token');
   const [userId,setUserID] = useState("");
   const senderEmail = localStorage.getItem('email');
-  const {id} = useParams();
+ 
   const formData = new URLSearchParams();
-
+    
+    
     useEffect(() => {
-    fetch(`http://localhost:5000/chat/chatbyproduct/${id}`)
+    fetch(`http://localhost:5000/chat/chatbyproduct/${id}`,
+     {headers: {
+            Authorization: `Bearer ${token}`,
+        }
+      }
+      )
       .then(response => response.json())
       .then(data => setUsers(data))
       .catch(error => console.error('Error fetching messages:', error));
   }, []);
+
+    socket.on('message', (data) => {
+           fetch(`http://localhost:5000/chat/chatbyproduct/${id}`,
+
+     {headers: {
+            Authorization: `Bearer ${token}`,
+        }
+      }
+      )
+      .then(response => response.json())
+      .then(data => setUsers(data))
+      .catch(error => console.error('Error fetching messages:', error));
+       return () => {
+            socket.off('message');
+        };
+        });
 
 
 
@@ -47,6 +71,7 @@ function Chats() {
             });
 
             if (response.status === 201) {
+              socket.emit('sendmessage', newMessage);
 
             toast(`👌 ${response.data.message}!`, {
                   position: "top-right",
@@ -138,7 +163,7 @@ function Chats() {
       <span className="text-xs text-gray-500 leading-none">2 min ago</span>
     </div>
   ))}
-</div>
+</div>a
 
        {/*Right side container */}
        

@@ -13,17 +13,30 @@ const handleAddToCart =()=>{
 }
 
 function Home() {
- 
+ const token = localStorage.getItem('token');
  const [products,setProducts] = useState([]);
 
 
   {/*Get app products*/}
-  useEffect(() => {
-    fetch('http://localhost:5000/product/')
-      .then(response => response.json())
-      .then(data => setProducts(data))
-      .catch(error => console.error('Error fetching products:', error));
-  }, []);
+useEffect(() => {
+    fetch('http://localhost:5000/product/', {
+        headers: {
+            Authorization: `Bearer ${token}`,
+        }
+    })
+    .then(response => {
+        if (response.status === 401) {
+            localStorage.clear();
+            throw new Error('Unauthorized user');
+            window.location.href = "http://localhost:3000/";
+        }
+        return response.json();
+    })
+    .then(data => setProducts(data))
+    .catch(error => console.error('Error fetching products:', error));
+}, []);
+
+
 
 
 

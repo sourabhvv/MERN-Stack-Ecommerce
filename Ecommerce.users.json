@@ -11,5 +11,22 @@
   "updatedAt": {
     "$date": "2024-02-10T07:32:42.813Z"
   },
+  "__v": 0,
+  "userType": "user"
+},
+{
+  "_id": {
+    "$oid": "65d4b4b72a6f7671d33f63ca"
+  },
+  "username": "admin",
+  "userType": "admin",
+  "password": "$2b$10$tlKArt7vzltYZwt0637TkeqlUZtaVW0Wd.jL8Z.Nu0FpzBgQefFCi",
+  "email": "admin@gmail.com",
+  "createdAt": {
+    "$date": "2024-02-20T14:18:31.723Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-20T14:18:31.723Z"
+  },
   "__v": 0
 }]

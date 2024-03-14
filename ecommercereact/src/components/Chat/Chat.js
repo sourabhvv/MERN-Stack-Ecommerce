@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
+import io from 'socket.io-client';
+const socket = io('http://localhost:5000');
 function Chat() {
 
 
@@ -21,6 +23,22 @@ function Chat() {
       .then(data => setMessages(data))
       .catch(error => console.error('Error fetching messages:', error));
   }, []);
+
+  socket.on('message', (data) => {
+           console.log(data);
+           fetch(`http://localhost:5000/chat/${userId}/${id}`,
+      )
+      .then(response => response.json())
+      .then(data => setMessages(data))
+      .catch(error => console.error('Error fetching messages:', error));
+      return () => {
+            socket.off('message');
+        };
+        });
+
+  
+
+
 
 
 
@@ -43,7 +61,7 @@ function Chat() {
             });
 
             if (response.status === 201) {
-
+            socket.emit('sendmessage', newMessage);
             toast(`👌 ${response.data.message}!`, {
                   position: "top-right",
                   autoClose: 5000,

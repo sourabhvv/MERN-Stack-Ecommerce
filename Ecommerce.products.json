@@ -6,7 +6,7 @@
   "description": "iphone 14 pro blue apple Bionic chip 5 G network ",
   "price": 74000,
   "category": "smartphones",
-  "stock": 9,
+  "stock": 8,
   "image": "image\\1707770072416.jpg",
   "created_at": {
     "$date": "2024-02-12T20:34:32.427Z"
@@ -21,7 +21,7 @@
   "description": "new boat headphons with surround sound ",
   "price": 2100,
   "category": "headphones",
-  "stock": 7,
+  "stock": 6,
   "image": "image\\1707942789430.jpg",
   "created_at": {
     "$date": "2024-02-14T20:33:09.444Z"
@@ -51,7 +51,7 @@
   "description": "Sony PS5 Console - Call of Duty Modern Warfare III Bundle",
   "price": 52390,
   "category": "Console",
-  "stock": 5,
+  "stock": 4,
   "image": "image\\1707994366006.jpg",
   "created_at": {
     "$date": "2024-02-15T10:52:46.011Z"
@@ -115,6 +115,21 @@
   "image": "image\\1707995450908.jpg",
   "created_at": {
     "$date": "2024-02-15T11:10:50.909Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d4a6fd884a035bbde83949"
+  },
+  "product_name": "newmonitor",
+  "description": "Zebronics monitor",
+  "price": 2000,
+  "category": "Monitor",
+  "stock": 12,
+  "image": "image\\1708435197323.jpg",
+  "created_at": {
+    "$date": "2024-02-20T13:19:57.329Z"
   },
   "__v": 0
 }]

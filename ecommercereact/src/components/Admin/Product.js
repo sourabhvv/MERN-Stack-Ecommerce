@@ -6,11 +6,16 @@ import Model from './Model'
 
 function Product() {
   const [products,setProducts] = useState([]);
-
+  const token = localStorage.getItem('token');
 
   {/*Get app products*/}
   useEffect(() => {
-    fetch('http://localhost:5000/product/')
+    fetch('http://localhost:5000/product/admin-product',
+        {headers: {
+            Authorization: `Bearer ${token}`,
+        }
+      }
+      )
       .then(response => response.json())
       .then(data => setProducts(data))
       .catch(error => console.error('Error fetching products:', error));

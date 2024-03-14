@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import {Link} from 'react-router-dom'
 
 function Tablecomponent({products}) {
+  const token = localStorage.getItem('token');  
   const [id ,setId]= useState("");
   const [product,setProduct] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -57,7 +58,7 @@ function Tablecomponent({products}) {
 
 
  
- const handleSubmit = async(e)=>{
+ const handleSubmit = async(e)=>{   
      e.preventDefault();
       const formData = new URLSearchParams();
       if(selectedFile){
@@ -111,7 +112,9 @@ function Tablecomponent({products}) {
 
  function EditProduct(id){
 
-    fetch(`http://localhost:5000/product/get-product/${id}`)
+    fetch(`http://localhost:5000/product/get-product/${id}`, {headers: {
+            Authorization: `Bearer ${token}`,
+        }})
             .then(response => response.json())
              .then(data => {
       setProduct(data[0]);

@@ -8,10 +8,15 @@ import { Link } from "react-router-dom";
 function View() {
   const [product,setProducts] = useState([]);
   const {id} = useParams();
+  const token = localStorage.getItem('token');
 
  
   useEffect(() => {
-    fetch(`http://localhost:5000/product/get-product/${id}`)
+    fetch(`http://localhost:5000/product/get-product/${id}`,{
+      headers:{
+        Authorization:`Bearer ${token}`,
+      }
+    })
       .then(response => response.json())
       .then(data => setProducts(data[0]))
       .catch(error => console.error('Error fetching products:', error));

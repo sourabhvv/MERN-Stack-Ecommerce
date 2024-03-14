@@ -8,12 +8,30 @@
       "product_id": {
         "$oid": "65ca80d876ee615c0ff03d91"
       },
+      "quantity": 2,
+      "_id": {
+        "$oid": "65d849a6dd4b84b42b58705a"
+      }
+    },
+    {
+      "product_id": {
+        "$oid": "65cd2385cf8775079f7a6136"
+      },
       "quantity": 1,
       "_id": {
-        "$oid": "65cfa4c860913c71d3d319b8"
+        "$oid": "65d849e0dd4b84b42b587060"
+      }
+    },
+    {
+      "product_id": {
+        "$oid": "65cdecfee3454489cb13f287"
+      },
+      "quantity": 1,
+      "_id": {
+        "$oid": "65d84a08dd4b84b42b587067"
       }
     }
   ],
-  "total_price": 3185570,
-  "__v": 68
+  "total_price": 3496607,
+  "__v": 76
 }]
